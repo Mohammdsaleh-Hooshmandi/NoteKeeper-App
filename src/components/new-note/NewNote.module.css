@@ -1,0 +1,83 @@
+.formWrapper {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.titleInput {
+    width: 100%;
+    border-bottom: .1rem solid #ccc;
+    padding: 2rem .5rem;
+    font-size: 3.5rem;
+}
+
+.titleInput::placeholder {
+    font-size: 3.5rem;
+}
+
+.noteInput {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20rem;
+    min-height: 10rem;
+    padding: .5rem;
+    font-size: 2.7rem;
+}
+
+.noteInput::placeholder {
+    font-size: 3rem;
+}
+
+.formWrapper div {
+    width: 100%;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.closeBtn {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #f5ba13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.closeBtn i {
+    transition: transform .2s;
+}
+
+.closeBtn:hover i {
+    transform: scale(1.2);
+}
+
+.addBtn {
+    font-family: "McLaren", cursive;
+    width: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f5ba13;
+    border-radius: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.addBtn:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.invalid {
+    border: .1rem solid rgb(251, 88, 88);
+    background-color: rgb(239, 132, 132);
+}
