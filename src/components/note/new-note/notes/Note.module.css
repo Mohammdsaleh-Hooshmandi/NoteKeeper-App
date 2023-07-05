@@ -1,5 +1,6 @@
 .note {
     max-width: 30rem;
+    height: 30rem;
     padding: 2rem;
     background-color: #ccc;
     border-radius: 1.2rem;
@@ -9,14 +10,24 @@
 }
 
 .title {
-    font-size: 2.5rem;
-    font-family: sans-serif;
+    width: 100%;
+    height: 10%;
     margin-bottom: 1rem;
 }
 
+.title h2 {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
 .body {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.body p {
     font-size: 2rem;
-    max-width: 100%;
 }
 
 .removeBtn {

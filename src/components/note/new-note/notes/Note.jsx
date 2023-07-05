@@ -13,8 +13,13 @@ function Note (props) {
                     <i className="fa-solid fa-trash"></i>
                 </button>
 
-                <h2 className={styles.title}>{props.title}</h2>
-                <p className={styles.body}>{props.body}</p>
+                <div className={styles.title}>
+                    <h2>{props.title}</h2>
+                </div>
+                
+                <div className={styles.body}>
+                    <p>{props.body}</p>
+                </div>
             </div>
         </li>
     );
