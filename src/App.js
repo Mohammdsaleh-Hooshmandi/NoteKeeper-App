@@ -6,6 +6,7 @@ import allNote from "./Data";
 import Note from "./components/note/new-note/notes/Note";
 import AddButton from "./components/note/new-note/add-button/AddButton";
 import NewNote from "./components/note/new-note/NewNote";
+import NoteNotFound from "./components/messages/NoteNotFound";
 
 function App() {
 	const [data, setNewData] = useState(allNote);
@@ -36,7 +37,7 @@ function App() {
 			<Header />
 			{addNewNote ? <NewNote onSave={saveHandler} onClick={closeNewNoteHandler}/> : <AddButton onClick={openNewNoteHandler}/>}
 			<ul className="notes-wrapper">
-				{data.map(note => <Note key={note.id} id={note.id} title={note.title} body={note.note} onRemove={removeNoteHandler}/>)}
+				{data.length < 1 ? <NoteNotFound /> : data.map(note => <Note key={note.id} id={note.id} title={note.title} body={note.note} onRemove={removeNoteHandler}/>)}
 			</ul>
 			<Footer />
 		</div>

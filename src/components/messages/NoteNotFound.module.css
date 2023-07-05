@@ -1,0 +1,19 @@
+.icon {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.contents {
+    font-family: sans-serif;
+    color: #1B6B93;
+}
+
+.contents h1 {
+    font-size: 4rem;
+}
+
+.contents h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
