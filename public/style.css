@@ -21,4 +21,5 @@ html {
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;
+    justify-content: center;
 }

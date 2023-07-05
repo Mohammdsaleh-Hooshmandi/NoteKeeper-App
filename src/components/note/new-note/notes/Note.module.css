@@ -1,5 +1,5 @@
 .note {
-    width: 50rem;
+    max-width: 30rem;
     padding: 2rem;
     background-color: #ccc;
     border-radius: 1.2rem;
@@ -8,8 +8,9 @@
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: sans-serif;
+    margin-bottom: 1rem;
 }
 
 .body {
