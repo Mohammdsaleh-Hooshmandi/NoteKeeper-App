@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    text-align: right;
+    padding: 2rem;
+}
+
+.btn {
+    background-color: #f5ba13;
+    border-radius: 50%;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 6rem;
+}

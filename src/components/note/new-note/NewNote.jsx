@@ -12,7 +12,8 @@ function NewNote (props) {
         setEnteredData(preData => { return {...preData, enteredNote: event.target.value} });
     }
     function saveHandler () {
-        props.onSave(enteredData)
+        props.onSave(enteredData);
+        setEnteredData(preData => { return {...preData, enteredTitle: "", enteredNote: ""} });
     }
 
     function validateInputs () {
@@ -25,7 +26,7 @@ function NewNote (props) {
 
     return (
         <div className={styles.formWrapper}>
-            <button type="button" className={styles.closeBtn} title="Close">
+            <button type="button" className={styles.closeBtn} title="Close" onClick={props.onClick}>
                 <i className="fa-solid fa-xmark"></i>
             </button>
 
