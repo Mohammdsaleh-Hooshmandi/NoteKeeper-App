@@ -26,13 +26,17 @@ function App() {
 	function closeNewNoteHandler () {
 		setAddNewNote(false)
 	}
+	function removeNoteHandler (removedNoteId) {
+		const newData = data.filter(item => item.id !== removedNoteId);
+		setNewData(newData);
+	}
 	
 	return (
 		<div className="container">
 			<Header />
 			{addNewNote ? <NewNote onSave={saveHandler} onClick={closeNewNoteHandler}/> : <AddButton onClick={openNewNoteHandler}/>}
 			<ul className="notes-wrapper">
-				{data.map(note => <Note key={note.id} title={note.title} body={note.note}/>)}
+				{data.map(note => <Note key={note.id} id={note.id} title={note.title} body={note.note} onRemove={removeNoteHandler}/>)}
 			</ul>
 			<Footer />
 		</div>
