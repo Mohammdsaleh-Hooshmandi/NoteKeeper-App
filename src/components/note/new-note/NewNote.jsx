@@ -14,6 +14,7 @@ function NewNote (props) {
     function saveHandler () {
         props.onSave(enteredData);
         setEnteredData(preData => { return {...preData, enteredTitle: "", enteredNote: ""} });
+        setIsValid(false);
     }
 
     function validateInputs () {
